@@ -14,12 +14,12 @@ jobs:
     steps:
       - 
         name: Check out the source_repo
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
       
       -
         name: Docker metadata definitions
         id: meta
-        uses: docker/metadata-action@v6
+        uses: docker/metadata-action@v4
         with:
           images: ${{ vars.DOCKERHUB_USERNAME }}/example
           flavor: latest=false
